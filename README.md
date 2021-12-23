@@ -4,11 +4,11 @@ Repository of Elk Stack Server Project
 
 The files in this repository were used to configure the network depicted below.
 
-![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
-Images/My Drive - Google Drive - Google Chrome 12_20_2021 6_49_41 PM (2).png
+![TODO: Update the path with the name of your diagram](Diagrams/Network_Diagram.png.png)
+
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
-![TODO: Update the path with the name of your diagram] /etc/ansible/install-elk.yml
+![TODO: Update the path with the name of your diagram] (Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -80,8 +80,8 @@ Download/Launch ELK Container: This downloads the ELK docker container and initi
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
-Images/azadmin@YagerELKserver_ _etc_docker 12_19_2021 1_06_46 PM (2)
+![TODO: Update the path with the name of your screenshot of docker ps output](Diagrams/Docker.png.png)
+
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -94,11 +94,11 @@ We have installed the following Beats on these machines:
 	Filebeat/Metricbeat were installed on: ELK, Web1, Web2
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
-Filebeat: collects system events such as login/logout of the system. This can be   used to look for access attempts to your system. 
-EXAMPLE: Images/FileBeat_Login_Info.png
+Filebeat: collects system events such as login/logout of the system. This can be used to look for access attempts or changes to your system that were unwanted. 
+EXAMPLE: (Diagrams/FileBeat syslog.png.png)
 
 Metiricbeat: collects information such as hardware usage. For instance memory/cpu usage statistics which can be used to look for unusual system behavior. 
-EXAMPLE: Images/MetricBeat_System_Info.png
+EXAMPLE: (Diagrams/MetricBeat syslog.png.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -121,4 +121,3 @@ By specifying a section as [webservers] and [elk] you can differentiate where th
 
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://168.61.190.10:5601/app/kibana
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
