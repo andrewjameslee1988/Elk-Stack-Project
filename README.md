@@ -57,6 +57,8 @@ JUMPBOX:
 	Public IP:52.149.157.156
 	Private IP:10.0.0.7
 A summary of the access policies in place can be found in the table below.
+_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 | Name          | Publicly Accessible | Allowed IP Address |
 |---------------|---------------------|--------------------|
 | Jump Box      | SSH-22-Yes          | 136.32.119.153     |
@@ -95,9 +97,11 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 Filebeat: collects system events such as login/logout of the system. This can be used to look for access attempts or changes to your system that were unwanted. 
+
 ![TODO: Update the path with the name of your diagram](Diagrams/FileBeat syslog.png.png)
 
 Metiricbeat: collects information such as hardware usage. For instance memory/cpu usage statistics which can be used to look for unusual system behavior. 
+
 ![TODO: Update the path with the name of your diagram](Diagrams/MetricBeat syslog.png.png)
 
 ### Using the Playbook
