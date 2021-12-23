@@ -25,13 +25,17 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+
 -Load Balancers makes a single point access for multiple machines for a service, this creates high levels of availability for access.  The advantage of using a jump box is that it protects access to the service or machines using ssh as a means of access, without the key access being unavailable. 
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the log files and system resources.
+
 -Filebeat watches system logs and records any changes to them to Elasticsearch
+
 -Metricbeat gathers system information such as resource and cpu usage which can be displayed in Elasticsearch
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
+_[](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function           | IP Address | Operating System |
 |----------|--------------------|------------|------------------|
@@ -46,14 +50,19 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+
 -Add whitelisted IP addresses_136.32.119.153
 
 Machines within the network can only be accessed by the Jump Box.
+
 -JUMPBOX:
+
 	Public IP:52.149.157.156
+	
 	Private IP:10.0.0.7
+	
 A summary of the access policies in place can be found in the table below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+_[](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name          | Publicly Accessible | Allowed IP Address |
 |---------------|---------------------|--------------------|
@@ -65,10 +74,15 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually.  
+
+
 -The advantage of this method is that it allows for complete automation of a server reducing time and errors that can made in the setup process.
+
 The playbook implements the following tasks:
+
 -The steps of the ELK installation are as follows:
+
 - Install Docker: Installs the code for the Docker to the remote server
 - Install Python3_pip: Pip is an installation module that allows for other docker modules to be installed
 - Install Docker Module: Tells PIP to install the needed docker modules
