@@ -93,8 +93,8 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._Filebeat: collects system events such as login/logout of the system. This can be used to look for access attempts or changes to your system that were unwanted. 
 
-!https://github.com/andrewjameslee1988/Elk-Stack-Project/blob/main/Diagrams/FileBeat%20syslog.png.png?raw=true)
-
+![](https://github.com/andrewjameslee1988/Elk-Stack-Project/blob/main/Diagrams/FileBeat%20syslog.png.png?raw=true)
+ 
 Metiricbeat: collects information such as hardware usage. For instance memory/cpu usage statistics which can be used to look for unusual system behavior. 
 
 ![TODO: Update the path with the name of your diagram](Diagrams/MetricBeat syslog.png.png)
