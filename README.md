@@ -119,10 +119,15 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include [elk] 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 - Run the playbook, and navigate to http://168.61.190.10:5601/app/kibana to check that the installation worked as expected.
 
-_Answer the following questions to fill in the blanks:_
+
 The elk playbook file is: install-elk.yml
+
 - By updating the Hosts file we can specify where we want elk installed, alternatative which to install Filebeat on.  
-By specifying a section as [webservers] and [elk] you can differentiate where the installs occur. For EXAMPLE:
+- 
+By specifying a section as [webservers] and [elk] you can differentiate where the installs occur. 
+
+For EXAMPLE:
+
 [webservers]
 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 10.0.0.8 ansible_python_interpreter=/usr/bin/python3
