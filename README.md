@@ -8,7 +8,7 @@ The files in this repository were used to configure the network depicted below.
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
-![TODO: Update the path with the name of your diagram] (Ansible/install-elk.yml)
+![TODO: Update the path with the name of your diagram](Ansible/install-elk.yml)
 
 This document contains the following details:
 - Description of the Topology
@@ -72,11 +72,11 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 The advantage of this method is that it allows for complete automation of a server reducing time and errors that can made in the setup process.
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-Install Docker: Installs the code for the Docker to the remote server
-Install Python3_pip: Pip is an installation module that allows for other docker modules to be installed
-Docker Module: Tells PIP to install the needed docker modules
-Increase Memory: An issue with the ELK Docker is having too little memory. This can help fix the potential issue to allow the server to launch properly
-Download/Launch ELK Container: This downloads the ELK docker container and initializes it with the specified ports being published
+- Install Docker: Installs the code for the Docker to the remote server
+- Install Python3_pip: Pip is an installation module that allows for other docker modules to be installed
+- Docker Module: Tells PIP to install the needed docker modules
+- Increase Memory: An issue with the ELK Docker is having too little memory. This can help fix the potential issue to allow the server to launch properly
+- Download/Launch ELK Container: This downloads the ELK docker container and initializes it with the specified ports being published
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -95,10 +95,10 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 Filebeat: collects system events such as login/logout of the system. This can be used to look for access attempts or changes to your system that were unwanted. 
-EXAMPLE: (Diagrams/FileBeat syslog.png.png)
+![TODO: Update the path with the name of your diagram](Diagrams/FileBeat syslog.png.png)
 
 Metiricbeat: collects information such as hardware usage. For instance memory/cpu usage statistics which can be used to look for unusual system behavior. 
-EXAMPLE: (Diagrams/MetricBeat syslog.png.png)
+![TODO: Update the path with the name of your diagram](Diagrams/MetricBeat syslog.png.png)
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
