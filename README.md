@@ -37,7 +37,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 -Metricbeat gathers system information such as resource and cpu usage which can be displayed in Elasticsearch
 The configuration details of each machine may be found below.
 
-_[](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+_[](http://www.tablesgenerator.com/markdown_tables)
 
 | Name     | Function           | IP Address | Operating System |
 |----------|--------------------|------------|------------------|
@@ -64,7 +64,7 @@ Machines within the network can only be accessed by the Jump Box.
 	Private IP:10.0.0.7
 	
 A summary of the access policies in place can be found in the table below.
-_[](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+_[](http://www.tablesgenerator.com/markdown_tables)
 
 | Name          | Publicly Accessible | Allowed IP Address |
 |---------------|---------------------|--------------------|
@@ -98,13 +98,12 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- List the IP addresses of the machines you are monitoring_
 - 10.0.0.6
 - 10.0.0.8
 - 10.1.0.4
-We have installed the following Beats on these machines:
-- The Beats: Filebeat/Metricbeat were installed on: ELK, Web1, Web2
-These Beats allow us to collect the following information from each machine:
+
+Filebeat/Metricbeat were installed on: ELK, Web1, Web2.  These Beats allow us to collect the following information from each machine:
+
 - Filebeat: collects system events such as login/logout of the system. This can be used to look for access attempts or changes to your system that were unwanted. 
 
 ![](https://github.com/andrewjameslee1988/Elk-Stack-Project/blob/main/Diagrams/FileBeat%20syslog.png.png?raw=true)
