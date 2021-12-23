@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 ![](Ansible/install-elk.yml)
 
-	/etc/ansible/install-elk-playbook.yml
+	/etc/ansible/install-elk.yml
 
 This document contains the following details:
 - Description of the Topology
